@@ -9,12 +9,6 @@ try:
         else:
             print("There are not informations in the txt file")
         
-    
-        
-   
-            
-            
-
 except FileNotFoundError:
     print("❌ File not found. Please check the path and try again.")
 
@@ -27,6 +21,10 @@ def calculationChar():
     
    numberChar = len(content)
    print(numberChar)
+   
+   numberWords = content.split()
+   
+   print(numberWords)
      
     
     
