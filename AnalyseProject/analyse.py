@@ -18,13 +18,23 @@ except Exception as e:
     
 
 def calculationChar():
-    
+
    numberChar = len(content)
    print(numberChar)
    
    numberWords = content.split()
+   print(len(numberWords))
    
-   print(numberWords)
+   
+   numberPhrase = 0
+   
+   for char in content :
+       if char in [",", ".", "?", "!"]:
+           numberPhrase += 1
+    
+   print(numberPhrase)
+        
+           
      
     
     
