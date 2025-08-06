@@ -48,7 +48,20 @@ def addTask(file_name):
         json.dump(data, file)
 
 
-def mail():
+def viewAll(file_name):
+
+    if os.path.exists(file_name):
+        with open(file_name, "r") as file:
+            data = json.load(file)
+
+    else:
+        print("There is no data ")
+
+    for idx, value in enumerate(data):
+        print(f"{idx}: {value}}")
+
+
+def main():
     menu_display()
     file_name = "task.json"
 
@@ -58,8 +71,8 @@ def mail():
         if action == "1":
             addTask(file_name)
 
-        else:
-            return
+        elif action == "2":
+            viewAll(file_name)
 
 
-mail()
+main()
