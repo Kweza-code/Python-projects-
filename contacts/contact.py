@@ -72,6 +72,10 @@ def main():
                 add_contact(file_name)
             elif action == 2:
                 viewAll(file_name)
+            elif action == 3:
+                print("Good Bye See you soon")
+                return
+
         except Exception as e:
             (f"An error has occured {e}")
 
