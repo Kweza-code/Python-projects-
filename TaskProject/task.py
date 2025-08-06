@@ -49,16 +49,21 @@ def addTask(file_name):
 
 
 def viewAll(file_name):
-
     if os.path.exists(file_name):
         with open(file_name, "r") as file:
-            data = json.load(file)
+            try:
+                data = json.load(file)
+            except json.JSONDecodeError:
+                print("There is no data")
+                return
 
+        if not data:
+            print("There is no task to display.")
+        else:
+            for idx, value in enumerate(data):
+                print(f"{idx}: {value}")
     else:
         print("There is no data ")
-
-    for idx, value in enumerate(data):
-        print(f"{idx}: {value}}")
 
 
 def main():
