@@ -26,7 +26,7 @@ def menu_display():
 
 
 def addTask(file_name):
-    valid_options = ["start", "sending", "done"]
+    valid_options = ["start", "pending", "done"]
 
     while True:
         status = input(
@@ -56,7 +56,7 @@ def addTask(file_name):
     data.append(t.to_dict())
 
     with open(file_name, "w") as file:
-        json.dump(data, file)
+        json.dump(data, file, indent=4)
 
 
 def viewAll(file_name):
@@ -72,8 +72,11 @@ def viewAll(file_name):
         if not data:
             print("There is no task to display.")
         else:
+            # CHAT GPT IDEA, i had no clue how to do sorted them 💀
+            status_order = {"start": 0, "pending": 1, "done": 2}
+            data = sorted(
+                data, key=lambda x: status_order.get(x["status"], 99))
             for i, value in enumerate(data):
-
                 print(f"{i}: {value}")
 
             action = int(
