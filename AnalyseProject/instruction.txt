@@ -5,6 +5,4 @@
 	•	Characters (with and without spaces) ✅
 	•	Lines
 	•	Sentences (optional, based on ., !, ?) ✅
-	3.	Find the most common word
-	4.	List the top 5 most frequent words
-	5.	Optional: Count how many times a specific word (user input) appears.
+	
