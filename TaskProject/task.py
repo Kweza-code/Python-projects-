@@ -49,6 +49,7 @@ def addTask(file_name):
 
 
 def viewAll(file_name):
+
     if os.path.exists(file_name):
         with open(file_name, "r") as file:
             try:
@@ -60,8 +61,22 @@ def viewAll(file_name):
         if not data:
             print("There is no task to display.")
         else:
-            for idx, value in enumerate(data):
-                print(f"{idx}: {value}")
+            for i, value in enumerate(data):
+
+                print(f"{i}: {value}")
+
+            action = int(
+                input("Please enter the number of the task you want to change: "))
+
+            if 0 <= action < len(data):
+                newStatut = input("Please enter the new statut of the task: ")
+                data[action]["status"] = newStatut
+            else:
+                print("Invalid task number.")
+
+            with open(file_name, "w") as file:
+                json.dump(data, file, indent=4)
+
     else:
         print("There is no data ")
 
