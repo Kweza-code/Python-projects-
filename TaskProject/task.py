@@ -1,3 +1,4 @@
+
 import os
 import json
 
@@ -25,10 +26,20 @@ def menu_display():
 
 
 def addTask(file_name):
+    valid_options = ["start", "sending", "done"]
 
-    description = input("Please enter a description of your task")
-    due_date = int(input("Please enter days until it needs to be done"))
-    status = input("Please enter the status of your task")
+    while True:
+        status = input(
+            "Please enter the status of your taks : Start - Pending - Done: ").lower()
+
+        if status in valid_options:
+            break
+        else:
+            (print("Invalid Status"))
+
+    description = input(
+        "Please enter a description of your task: ")
+    due_date = int(input("Please enter days until it needs to be done: "))
 
     t = Task(description, due_date, status)
 
