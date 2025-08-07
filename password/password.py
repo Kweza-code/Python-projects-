@@ -1,7 +1,8 @@
 import json
 import os
 import bcrypt
-import string
+import getpass
+
 
 file_name = "contact.json"
 
@@ -34,7 +35,7 @@ def validPassword(inputPassword):
 def createAccount(file_name):
 
     username = input("Please enter a username: ")
-    inputPassword = input("Please enter a password: ")
+    inputPassword = getpass.getpass("Please enter a password: ")
     validPassword(inputPassword)
     hash = bcrypt.gensalt()
 
@@ -74,7 +75,8 @@ def connectAccount(file_name):
     print("Veuillez vous connecter")
 
     usernameConnection = input("Veuillez entrer votre username de connexion: ")
-    passwordConnection = input("Please enter your password: ").encode()
+    passwordConnection = getpass.getpass(
+        "Please enter your password: ").encode()
 
     for account in data:
         if usernameConnection == account["username"]:
