@@ -1,0 +1,5 @@
+Create a task manager app where the user can:
+	•	Add tasks
+	•	Mark them as done
+	•	View pending and completed tasks
+	•	Save all tasks to a JSON file

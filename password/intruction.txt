@@ -1,0 +1,7 @@
+Create a command-line login system where users can:
+	1.	Register a new account
+	2.	Log in with their credentials
+	3.	The system must validate passwords with rules:
+	•	At least one uppercase letter
+	•	At least one special character (!@#$%^&*, etc.)
+	•	At least three digits

@@ -1,0 +1,54 @@
+[
+    {
+        "username": "Yannick",
+        "password": "Thomas"
+    },
+    {
+        "username": "Thomas",
+        "password": "$2b$12$wEOUoc2bxk9MoHJksQpgJevIBDm.QkSW2QNIn.HobrYdJTHh0X.dK"
+    },
+    {
+        "username": "Jamil",
+        "password": "$2b$12$oJUlERFGZoRa9hyim8K1zOJxyMRZD3jnPZyZogTunpOQ3f5ApFxm6"
+    },
+    {
+        "username": "",
+        "password": "$2b$12$rWD3afHcHIaLWd4P0QmdpOxUP2WoGBzz5XBO1WQnsmIRAz7FUOElu"
+    },
+    {
+        "username": "Thomas",
+        "password": "$2b$12$LXZEjyA3lsRqC1HD.kGcwu6YuUv5BYpK19SPqOgAqIKefh5A1tdZG"
+    },
+    {
+        "username": "Thomas",
+        "password": "$2b$12$rwuV.GOQWPjdydzuP4aGcuHV973v9MUh6ZyZwRAyJ//Yt2W5Tjuhq"
+    },
+    {
+        "username": "Loril",
+        "password": "$2b$12$V84n370PswoElBCh7gPNMecR.YF8H/c.lmJGSbUAm/4A8hGHRlAEK"
+    },
+    {
+        "username": "Lennon",
+        "password": "$2b$12$gtvG5y7XRd3BdM8TvY7j1.fpBbnJvvYV9TlB0JM1MHY5S20WISWgO"
+    },
+    {
+        "username": "Delphine",
+        "password": "$2b$12$i3Cbk5Dlr0uB77qakdEVlO/VFil.YolfEqnv8lOlGT7KPYb6KR7PC"
+    },
+    {
+        "username": "Thomas ",
+        "password": "$2b$12$CRwUVzxkIIWmaPt9Klr3gOQV8amTHucqWAQzHSal98QHWJgrGv04y"
+    },
+    {
+        "username": "Caroline",
+        "password": "$2b$12$6DKP/0wEzLX9GhNXH9kTfO5w0K5vbXDFwFiF35gTTAMCON880YTk2"
+    },
+    {
+        "username": "Thomas ",
+        "password": "$2b$12$BTkw/aqeHFibjXetJK.hX.v873PWZgUOcduQP8pNV7upiZE758oqW"
+    },
+    {
+        "username": "Thomas ",
+        "password": "$2b$12$3PBs.2zE2tqUKpiiFSzp6uQTAnQh.4RkIsGXhTK.ZrmS56NS7Uodu"
+    }
+]
